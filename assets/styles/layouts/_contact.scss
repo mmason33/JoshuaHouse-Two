@@ -1,0 +1,47 @@
+body.page-template-contact {
+  background: linear-gradient(to bottom, transparent, rgba(171,201,55,.75));
+  .btn-primary {
+    background: #81816d;
+    border-color: #81816d;
+  }
+  h2,h3,h4,h5,h6 {
+    color: #81816d
+  }
+  form .form-control {
+    background: transparent;
+    &:focus {
+      border-color: rgba(171,201,55,1);
+    }
+    &::placeholder {
+      color:rgba(0,0,0,.35);
+    }
+  }
+}
+
+.contact {
+  padding: 10%;
+}
+
+.contact-address {
+  h4 {
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .contact {
+    padding: 15% 0 !important;
+  }
+}
+
+@media screen and (max-width:768px) {
+  form {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .contact {
+    padding: 30% 0 !important;
+  }
+}

@@ -1,0 +1,52 @@
+#step-1, #step-2, #step-3, #step-4, #step-5, #step-6 {
+  display: none;
+  position: relative;
+}
+#step-1.active, #step-2.active, #step-3.active, #step-4.active, #step-5.active, #step-6.active {
+  display: block;
+}
+.ins-verify {
+  position: relative;
+  min-height: 600px;
+}
+
+.insurance-verification .btn-primary {
+  background: #81816d !important;
+  border-color: #81816d !important;
+}
+
+.insurance-verification .btn-success {
+  background: #abc937 !important;
+  border-color: #abc937 !important;
+}
+
+.insurance-verification {
+  input::placeholder {
+    color: rgba(0,0,0,.35) !important;
+  }
+  .hero, .hero:after {
+    height: 300px;
+  }
+  .hero:after {
+    padding: 10%;
+  }
+  .btn-success {
+    position: relative;
+    top: -25px;
+    left: 43%;
+    border-radius: 50%;
+    padding: 1.5rem 1rem;
+  }
+  .next {
+    float: right;
+  }
+  span.wpcf7-not-valid-tip {
+    display: none !important;
+  }
+  input.wpcf7-not-valid {
+    border-color: red !important;
+  }
+  form {
+    position: relative;
+  }
+}

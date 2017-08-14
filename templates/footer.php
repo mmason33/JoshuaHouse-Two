@@ -11,12 +11,16 @@
 	<div class="row">
 		<div class="col-md-12 text-center">
 		<ul class="footer-social-nav">
-			<li><i class="fa fa-facebook fa-2x"></i></li>
+			<!-- <li><i class="fa fa-facebook fa-2x"></i></li>
 			<li><i class="fa fa-twitter fa-2x"></i></li>
 			<li><i class="fa fa-linkedin fa-2x"></i></li>
 			<li><i class="fa fa-youtube fa-2x"></i></li>
 			<li><i class="fa fa-pinterest fa-2x"></i></li>
-			<li><i class="fa fa-instagram fa-2x"></i></li>
+			<li><i class="fa fa-instagram fa-2x"></i></li> -->
+			<li><a href="#" style="color:white">Link</a></li>
+			<li><a href="#" style="color:white">Link</a></li>
+      <li><a href="#" style="color:white">Link</a></li>
+			<li><a href="#" style="color:white">Link</a></li>
 		</ul>
 		</div>
 	</div>

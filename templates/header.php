@@ -51,7 +51,7 @@
     <div class="col-10">
             <!-- <a  class="hidden-md-up nav-number-mobile" href="tel:8663110003"><p>Call us <i class="fa fa-mobile"></i></p></a> -->
             <nav id="off-canvas-nav" class="primary-navigation">
-                    <a class="nav-number-mobile" href="tel:8663110003"><i class="fa-mobile fa"></i> 866.311.0003</a>
+                    <!-- <a class="nav-number-mobile" href="tel:8663110003"><i class="fa-mobile fa"></i> 866.311.0003</a> -->
                       <a id="nav-icon" href="#" class=""><span></span></a>
             <?php
                  wp_nav_menu( array(

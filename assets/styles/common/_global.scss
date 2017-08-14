@@ -27,6 +27,7 @@ strong {
 
 .hero {
 	height: 600px;
+	padding: 10%;
 	.hero-content {
 		z-index: 1;
 	}
@@ -105,7 +106,7 @@ strong {
     font-weight: 500;
     border: 1px solid #fff;
     padding: 1rem 2.5rem;
-    border-radius: 5px;	
+    border-radius: 5px;
 }
 
 .green-btn {
@@ -113,7 +114,7 @@ strong {
 	color: #fff;
     font-weight: 500;
     padding: 1rem 2.5rem;
-    border-radius: 5px;		
+    border-radius: 5px;
 }
 
 .btn-scroll {
@@ -166,6 +167,10 @@ strong {
 	}
 }
 
+.text-box.colored-bg.pad-2-5 {
+	padding: 2.5% 0;
+}
+
 
 @media screen and (max-width:1025px) {
 
@@ -173,6 +178,14 @@ strong {
 		h1 {
 			font-size: 2.75rem;
 		}
+	}
+
+	.hero, .hero:after {
+		height: 400px;
+	}
+
+	.hero {
+		padding: 17% 0;
 	}
 
 }
@@ -185,19 +198,14 @@ strong {
 		padding: .75rem 1rem;
 	}
 
-	.hero::after {
-		background: rgba(0,32,66,.5);
-		content: '';
-		position: absolute;
-		height: 500px;
-		width: 100%;
-		top: 0;
-		left: 0;
+	.text-box {
+		padding-top: 2rem;
 	}
+
 }
 
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
 
 	.hero-content h1 {
 		font-size: 2.15rem;
@@ -209,16 +217,24 @@ strong {
 
 	h3 {
 		font-size: 1.35rem;
-	}	
+	}
+
+	.hero, .hero:after {
+			height: 300px;
+	}
+
+	.hero-content {
+		padding-top: 3rem;
+	}
 
 }
 
 @media screen and (max-width: 375px) {
 
-	
+
 	.absolute-positioned {
 		top: 3rem;
 	}
-	
+
 
 }

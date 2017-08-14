@@ -9,7 +9,7 @@
  * The routing is enclosed within an anonymous function so that you can
  * always reference jQuery with $, even when in .noConflict() mode.
  * ======================================================================== */
-
+//AIzaSyDrbYW1mTUB45_lEuTwelpcSVzzen_Ul80
 (function($) {
 
   // Use this variable to set up the common and page specific functions. If you
@@ -59,9 +59,43 @@
       }
     },
     // About us page, note the change from about-us to about_us.
-    'about_us': {
+    'insurance_verification': {
       init: function() {
-        // JavaScript to be fired on the about us page
+        function multiStep(numberOfSteps, nextButtonClass, previousButtonClass, activateClass) {
+          var currentStep = 1;
+          $(nextButtonClass).click( function () {
+            if (currentStep === 1) {
+              $('.button-wrap').prepend('<button class="btn btn-primary previous">Previous Step</button>');
+            }
+            if (currentStep !== numberOfSteps) {
+              currentStep++;
+              $('.step-counter').text('Step ' + currentStep + ' of ' + numberOfSteps);
+              $('.' + activateClass).removeClass(activateClass);
+              $('#step-' + currentStep).addClass(activateClass);
+            }
+            if (currentStep === numberOfSteps) {
+              $(nextButtonClass).hide();
+            }
+          });
+
+          $(document).on('click', previousButtonClass, function () {
+            if (currentStep === numberOfSteps) {
+              $(nextButtonClass).show();
+            }
+            if (currentStep === 2) {
+              $(previousButtonClass).hide();
+            }
+            if (currentStep !== 1) {
+              currentStep--;
+              $('.step-counter').text('Step ' + currentStep + ' of ' + numberOfSteps);
+              $('.' + activateClass).removeClass(activateClass);
+              $('#step-' + currentStep).addClass(activateClass);
+            }
+          });
+        }//multiStep
+
+        multiStep(6, '.next', '.previous', 'active');
+
       }
     }
   };
