@@ -20,7 +20,7 @@ use Roots\Sage\Wrapper;
     ?>
     <?php if (!is_page_template('contact.php') && !is_page_template('verification.php')): ?>
       <?php get_template_part('includes/hero'); ?>
-      <?php do_action('get_builder'); ?>
+      <!-- <?php do_action('get_builder'); ?> -->
       <?php get_template_part('includes/builder'); ?>
     <?php endif; ?>
     <?php include Wrapper\template_path(); ?>

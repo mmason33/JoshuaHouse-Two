@@ -40,6 +40,17 @@
                 drop.preventDefault();
                 $(this).parent().toggleClass("open");
             });
+
+            $(window).scroll( function () {
+              if ($('.hero')) {
+                $('.hero').css({
+                  "opacity": 1 - $(window).scrollTop() / 300,
+                  "z-index" : 0,
+                  "top": 1 - $(window).scrollTop() / 10
+                });
+              }
+            });
+
           });
 
 
@@ -96,6 +107,9 @@
 
         multiStep(6, '.next', '.previous', 'active');
 
+        $('.form-date').focus( function () {
+          $(this).attr({type: 'date'});
+        });
       }
     }
   };

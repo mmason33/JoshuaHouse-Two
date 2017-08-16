@@ -21,6 +21,12 @@
 }
 
 .insurance-verification {
+  input, textarea {
+    margin-bottom: .5rem;
+    &:focus {
+      border-color: rgba(171,201,55,1);
+    }
+  }
   input::placeholder {
     color: rgba(0,0,0,.35) !important;
   }
@@ -48,5 +54,18 @@
   }
   form {
     position: relative;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .insurance-verification .btn-success {
+    left: 39%;
+  }
+}
+
+@media screen and (max-width:321px) {
+  .insurance-verification .btn-success {
+    top: -20px;
+    left: 35%;
   }
 }
