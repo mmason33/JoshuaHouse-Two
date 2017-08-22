@@ -1,0 +1,27 @@
+footer.content-info {
+	margin-top: 3rem;
+	padding: 2rem 0;
+	background: #81816d;
+	h4 a {
+		color: #abc937;
+	}
+}
+
+.footer-bottom {
+	position: relative;
+	height: 10px;
+	width: 100%;
+	background: #b6b6b6;
+}
+
+.footer-social-nav {
+	display: inline;
+	padding: 0;
+	li {
+		display: inline;
+		padding: 0 1rem;
+	}
+	.fa {
+		color: #f3f3f3;
+	}
+}

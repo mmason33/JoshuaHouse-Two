@@ -1,0 +1,32 @@
+//Buttons
+
+.white-btn {
+	color: #fff;
+  font-weight: 500;
+  border: 1px solid #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 5px;
+	display: inline-block;
+}
+
+.mobile-ins-btn {
+	padding: 10px 0;
+}
+
+.green-btn {
+	background: #abc937;
+	color: #fff;
+  font-weight: 500;
+  padding: 1rem 2.5rem;
+  border-radius: 5px;
+	display: inline-block;
+}
+
+/*================ QUERIES =================*/
+
+
+@media screen and (max-width: 768px) {
+  .green-btn, .white-btn {
+		padding: .75rem 1rem;
+	}
+}

@@ -1,20 +1,16 @@
-@import "common/variables";
-
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
 // endbower
 
 @import "common/global";
 @import "components/buttons";
-@import "components/comments";
 @import "components/forms";
-@import "components/grid";
-@import "components/wp-classes";
+@import "components/hero";
+@import "components/text-box";
+@import "components/utils";
 @import "layouts/header";
-@import "layouts/sidebar";
 @import "layouts/footer";
-@import "layouts/pages";
-@import "layouts/posts";
 @import "layouts/contact";
 @import "layouts/verification";
-@import "layouts/tinymce";
+@import "layouts/staff";
+@import "layouts/home";

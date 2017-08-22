@@ -1,9 +1,9 @@
 <?php // Repeating Builder ?>
 
-<?php 
+<?php
 
 
-	if ( have_rows('builder') ): 
+	if ( have_rows('builder') ):
 
 		while ( have_rows('builder') ) : the_row();
 
@@ -12,6 +12,9 @@
 				require('text-box.php');
 			endif;
 
+			if( get_row_layout() == 'insurance'):
+				require('insurance.php');
+			endif;
 
 		endwhile;
 

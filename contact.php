@@ -3,7 +3,6 @@
  * Template Name: Contact
  */
 ?>
-
 <section class="contact">
   <div class="container">
     <div class="row">

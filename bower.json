@@ -6,7 +6,5 @@
   ],
   "license": "MIT",
   "private": true,
-  "dependencies": {
-    "animate.css": "^3.5.2"
-  }
+  "dependencies": {}
 }

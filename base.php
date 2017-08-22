@@ -18,7 +18,7 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <?php if (!is_page_template('contact.php') && !is_page_template('verification.php')): ?>
+    <?php if (!is_page_template('contact.php')): ?>
       <?php get_template_part('includes/hero'); ?>
       <!-- <?php do_action('get_builder'); ?> -->
       <?php get_template_part('includes/builder'); ?>

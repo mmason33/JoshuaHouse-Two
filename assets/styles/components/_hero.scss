@@ -1,0 +1,55 @@
+//Hero
+
+.hero {
+	height: 500px;
+	padding: 10%;
+	position: relative;
+	box-shadow: 0 0 35px #b6b6b6;
+	.hero-content {
+		z-index: 1;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		height: 500px;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background: linear-gradient(to right, transparent, rgba(129,129,109,.4), rgba(129,129,109,.75));
+	}
+}
+
+.head {
+	padding-top: 15rem;
+}
+
+.hero-content {
+	h1 {
+		font-size: 3.5rem;
+	}
+	h5 {
+		line-height: 1.35;
+		margin-bottom:1.2rem;
+		font-weight: 300;
+	}
+}
+
+/*================= QUERIES ===============*/
+
+@media screen and (max-width:1025px) {
+
+	.hero-content {
+		h1 {
+			font-size: 2.75rem;
+		}
+	}
+
+	.hero, .hero:after {
+		height: 400px;
+	}
+
+	.hero {
+		padding: 17% 0;
+	}
+
+}
