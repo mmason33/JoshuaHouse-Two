@@ -57,6 +57,17 @@
   }
 }
 
+@media screen and (max-width:768px) {
+  .insurance-verification {
+    .hero-content {
+      padding-top: 6rem;
+    }
+    .hero {
+      padding: 0;
+    }
+  }
+}
+
 @media screen and (max-width: 575px) {
   .insurance-verification .btn-success {
     left: 39%;

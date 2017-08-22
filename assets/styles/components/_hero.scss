@@ -36,11 +36,17 @@
 
 /*================= QUERIES ===============*/
 
+@media screen and (max-width:1440px) {
+	.hero {
+		padding: 15% 10%;
+	}
+}
+
 @media screen and (max-width:1025px) {
 
 	.hero-content {
 		h1 {
-			font-size: 2.75rem;
+			font-size: 2.25rem;
 		}
 	}
 
@@ -52,4 +58,16 @@
 		padding: 17% 0;
 	}
 
+}
+
+@media screen and (max-width:576px) {
+	.hero-content {
+		padding-top: 4.5rem;
+	}
+
+	.our-staff {
+		.hero-content {
+			padding-top: 2.5rem !important;
+		}
+	}
 }

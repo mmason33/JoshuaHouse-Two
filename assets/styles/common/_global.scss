@@ -20,3 +20,10 @@ p, ul.list {
 strong {
 	font-weight: 500;
 }
+
+a {
+	color: #abc937;
+	&:hover {
+		color: #abc937;
+	}
+}
