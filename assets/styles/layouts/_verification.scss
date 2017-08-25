@@ -31,11 +31,10 @@
     color: rgba(0,0,0,.35) !important;
   }
   .hero, .hero:after {
-    height: 300px;
-  }
-  .hero:after {
+    height: 300px !important;
     padding: 10%;
   }
+
   .btn-success {
     position: relative;
     top: -25px;
@@ -57,13 +56,21 @@
   }
 }
 
+@media screen and (max-width:1025px) {
+  .insurance-verification {
+    .hero, .hero:after {
+      padding: 17% 0;
+    }
+  }
+}
+
 @media screen and (max-width:768px) {
   .insurance-verification {
     .hero-content {
       padding-top: 6rem;
     }
-    .hero {
-      padding: 0;
+    .hero, .hero:after {
+      padding: 7% 0;
     }
   }
 }

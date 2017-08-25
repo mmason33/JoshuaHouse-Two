@@ -38,14 +38,20 @@
 
 /*=============== QUERIES ==============*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) and (min-width: 576px) {
   .text-box {
     padding-top: 2rem;
   }
+	.absolute-positioned {
+		top: 5.6rem;
+	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
 	.absolute-positioned {
-		top: 3rem;
+		top: 2rem !important;
+		h2.white {
+			font-size: 1.9rem !important;
+		}
 	}
 }

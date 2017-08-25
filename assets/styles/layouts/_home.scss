@@ -32,3 +32,18 @@
 		margin-top: 2rem;
 	}
 }
+
+@media screen and (max-width:991px) {
+	.reasons {
+		.fa {
+			font-size: 1.5em !important;
+			padding: .75rem !important;
+		}
+	}
+}
+
+@media screen and (max-width:768px) {
+	.reasons {
+		text-align: center !important;
+	}
+}
