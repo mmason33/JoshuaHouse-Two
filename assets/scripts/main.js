@@ -54,14 +54,13 @@
           });
 
           $.ajax({
-            url: 'http://api.openweathermap.org/data/2.5/weather?lat=33.62&lon=-117.93&units=imperial&appid=9951bddf3af7e21abdb61ad50b4325a2',
+            url: 'https://api.openweathermap.org/data/2.5/weather?lat=33.62&lon=-117.93&units=imperial&appid=9951bddf3af7e21abdb61ad50b4325a2',
             method: 'GET'
           }).done( function (response) {
-            console.log(response);
             $('.weather').append(
               '<p class="white" style="margin:0;text-shadow:none;">Newport Beach |' +
               ' Forecast: ' + response.weather[0].main +
-              '&nbsp;<img style="width:35px;" src="http://openweathermap.org/img/w/' + response.weather[0].icon + '.png">' +
+              '&nbsp;<img style="width:35px;" src="https://openweathermap.org/img/w/' + response.weather[0].icon + '.png">' +
               '<br/>T: ' + response.main.temp + '&deg; | ' +
               'RH: ' + response.main.humidity + '%</p>'
             );
